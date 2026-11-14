@@ -9,19 +9,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
   <title>Frontend Mentor | Browser extensions manager UI</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 0.6875rem;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -35,69 +30,73 @@
     </header>
 
     <main>
-      <div class="extensions-filter-bar">
+      <div class="extensions-top-bar">
         <h1>Extensions List</h1>
-        <div class="filter-buttons-container">
-          <button>All</button>
-          <button>Active</button>
-          <button>Inactive</button>
-        </div>
+        <ul class="extensions-filter-buttons">
+          <li><button>All</button></li>
+          <li><button>Active</button></li>
+          <li><button>Inactive</button></li>
+        </ul>
       </div>
+
+      <ul class="extensions-list">
+        <li class="extensions-list-item">
+          <img src="/assets/images/logo-devlens.svg" alt="devlens">
+          <h2>Extension Name</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+          <button>Remove</button>
+          <button>Slider</button>
+        </li>
+
+        <li class="extensions-list-item">
+          <img src="/assets/images/logo-devlens.svg" alt="devlens">
+          <h2>Extension Name</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+          <button>Remove</button>
+          <button>Slider</button>
+        </li>
+
+        <li class="extensions-list-item">
+          <img src="/assets/images/logo-devlens.svg" alt="devlens">
+          <h2>Extension Name</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+          <button>Remove</button>
+          <button>Slider</button>
+        </li>
+
+        <li class="extensions-list-item">
+          <img src="/assets/images/logo-devlens.svg" alt="devlens">
+          <h2>Extension Name</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+          <button>Remove</button>
+          <button>Slider</button>
+        </li>
+
+        <li class="extensions-list-item">
+          <img src="/assets/images/logo-devlens.svg" alt="devlens">
+          <h2>Extension Name</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+          <button>Remove</button>
+          <button>Slider</button>
+        </li>
+
+        <li class="extensions-list-item">
+          <img src="/assets/images/logo-devlens.svg" alt="devlens">
+          <h2>Extension Name</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+          <button>Remove</button>
+          <button>Slider</button>
+        </li>
+      </ul>
+
     </main>
 
-    All
-    Active
-    Inactive
-
-    <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
-
-    DevLens
-    Quickly inspect page layouts and visualize element boundaries.
-    Remove
-
-    StyleSpy
-    Instantly analyze and copy CSS from any webpage element.
-    Remove
-
-    SpeedBoost
-    Optimizes browser resource usage to accelerate page loading.
-    Remove
-
-    JSONWizard
-    Formats, validates, and prettifies JSON responses in-browser.
-    Remove
-
-    TabMaster Pro
-    Organizes browser tabs into groups and sessions.
-    Remove
-
-    ViewportBuddy
-    Simulates various screen resolutions directly within the browser.
-    Remove
-
-    Markup Notes
-    Enables annotation and notes directly onto webpages for collaborative debugging.
-    Remove
-
-    GridGuides
-    Overlay customizable grids and alignment guides on any webpage.
-    Remove
-
-    Palette Picker
-    Instantly extracts color palettes from any webpage.
-    Remove
-
-    LinkChecker
-    Scans and highlights broken links on any page.
-    Remove
-
-    DOM Snapshot
-    Capture and export DOM structures quickly.
-    Remove
-
-    ConsolePlus
-    Enhanced developer console with advanced filtering and logging.
-    Remove
 
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
