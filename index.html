@@ -17,12 +17,14 @@
 
   <title>Frontend Mentor | Browser extensions manager UI</title>
 
+  <script src="js/fetchJson.js" defer></script>
+
 </head>
 
 <body>
 
   <div class="app">
-    <header>
+    <header class="flex-space-between">
       <img src="/assets/images/logo.svg" alt="logo">
       <button class="theme-toggle">
         <img src="/assets/images/icon-moon.svg" alt="icon-moon">
@@ -30,69 +32,16 @@
     </header>
 
     <main>
-      <div class="extensions-top-bar">
+      <div class="extensions-top-bar flex-space-between">
         <h1>Extensions List</h1>
         <ul class="extensions-filter-buttons">
-          <li><button>All</button></li>
-          <li><button>Active</button></li>
-          <li><button>Inactive</button></li>
+          <li><button class="basic-button">All</button></li>
+          <li><button class="basic-button">Active</button></li>
+          <li><button class="basic-button">Inactive</button></li>
         </ul>
       </div>
 
       <ul class="extensions-list">
-        <li class="extensions-list-item">
-          <img src="/assets/images/logo-devlens.svg" alt="devlens">
-          <h2>Extension Name</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-          <button>Remove</button>
-          <button>Slider</button>
-        </li>
-
-        <li class="extensions-list-item">
-          <img src="/assets/images/logo-devlens.svg" alt="devlens">
-          <h2>Extension Name</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-          <button>Remove</button>
-          <button>Slider</button>
-        </li>
-
-        <li class="extensions-list-item">
-          <img src="/assets/images/logo-devlens.svg" alt="devlens">
-          <h2>Extension Name</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-          <button>Remove</button>
-          <button>Slider</button>
-        </li>
-
-        <li class="extensions-list-item">
-          <img src="/assets/images/logo-devlens.svg" alt="devlens">
-          <h2>Extension Name</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-          <button>Remove</button>
-          <button>Slider</button>
-        </li>
-
-        <li class="extensions-list-item">
-          <img src="/assets/images/logo-devlens.svg" alt="devlens">
-          <h2>Extension Name</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-          <button>Remove</button>
-          <button>Slider</button>
-        </li>
-
-        <li class="extensions-list-item">
-          <img src="/assets/images/logo-devlens.svg" alt="devlens">
-          <h2>Extension Name</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-          <button>Remove</button>
-          <button>Slider</button>
-        </li>
       </ul>
 
     </main>

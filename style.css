@@ -19,9 +19,26 @@ ol {
   padding: 0;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .app {
   max-width: 1168px;
   margin-inline: auto;
+}
+
+.basic-button {
+  font-family: "Noto Sans", sans-serif;
+  padding: 0.5em 1em;
+  border-radius: 2em;
 }
 
 /* HEADER */
@@ -34,6 +51,10 @@ header {
   align-items: center;
 
   padding: 16px;
+
+  box-shadow:
+    0 1px 2px rgba(10, 19, 55, 0.04),
+    0 4px 12px rgba(10, 19, 55, 0.05);
 }
 
 .theme-toggle {
@@ -45,16 +66,9 @@ header {
 }
 
 /* MAIN */
-/* extensions list top bar */
-.extensions-top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .extensions-filter-buttons {
   display: flex;
-  gap: 0.5em;
+  gap: 0.6em;
 }
 
 ul.extensions-list {
@@ -63,15 +77,28 @@ ul.extensions-list {
   gap: 1em;
 }
 
-/* extensions list item */
+/* card */
 li.extensions-list-item {
   background-color: var(--color-neutral-0);
-  padding: 1em;
+  padding: 0.6em;
   border-radius: 0.8em;
+  border: 1px solid rgba(10, 19, 55, 0.06);
+  box-shadow:
+    0 1px 2px rgba(10, 19, 55, 0.04),
+    0 6px 16px rgba(10, 19, 55, 0.06);
 }
 
-.extensions-list-item p {
+.card-content {
+  display: flex;
+}
+
+.card-content h2 {
+  margin: 0;
+}
+
+.card-content p {
   font-size: 0.8em;
+  margin: 0;
 }
 
 /* FOOTER */
