@@ -22,11 +22,11 @@ fetch("./data.json")
       </section>
 
       <section class="flex-space-between">
-        <button class="basic-button">
+        <button>
           Remove
         </button>
-        <button>
-          Slider
+        <button class="button-toggle">
+          
         </button>
       </section>
 `;

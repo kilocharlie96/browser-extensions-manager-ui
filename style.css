@@ -1,5 +1,6 @@
 :root {
   --color-neutral-0: hsl(200, 60%, 99%);
+  --color-red-700: hsl(3, 77%, 44%);
 }
 
 /* BASIC ELEMENTS */
@@ -30,17 +31,17 @@ a {
   cursor: pointer;
 }
 
+button {
+  font-family: "Noto Sans", sans-serif;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+}
+
 /* UNIVERSAL CLASSES */
 .flex-space-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.basic-button {
-  font-family: "Noto Sans", sans-serif;
-  padding: 0.5em 1em;
-  border-radius: 0.75em;
 }
 
 /* ELEMENTS */
@@ -126,6 +127,13 @@ li.extensions-list-item {
   font-size: 0.8em;
   margin: 0;
   width: 80%;
+}
+
+.button-toggle {
+  background-color: var(--color-red-700);
+  border: none;
+  width: 3em;
+  height: 1.8em;
 }
 
 /* FOOTER */
